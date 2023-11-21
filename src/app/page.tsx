@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Nav from './components/navbar/nav'
-import BioPage from './components/bio/biopage'
+import BioPage from './components/bio/biosection'
 
 export default function Home() {
   return (
