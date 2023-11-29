@@ -1,10 +1,8 @@
 import Image from "next/image";
-import hero from '../../../../public/gradient-hero.jpg'
 
 export default function Hero() {
 	return (
-		<section  /* style={{backgroundImage: `url(${hero.src})`}} */ className="w-full h-full py-5">
-			{/* <Image src={'/gradient-hero.jpg'} alt="hero-image" fill/> */}
+		<section className="w-full h-full py-5">
 			<div className="grid grid-cols-3 mx-auto lg:w-4/5 h-full">
 				<div className="grid-span-1 flex flex-col justify-center gap-10">
 					<p id='title' className="text-center tracking-[.5rem] font-semibold">Fullstack SWE | Mathematician</p>
