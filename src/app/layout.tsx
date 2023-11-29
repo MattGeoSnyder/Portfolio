@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from '@/app/components/navbar/nav';
+import bg from '../../public/PortfolioBackground.svg';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='flex flex-col w-full h-full relative'>
+        <div className='flex flex-col w-full h-full relative bg-cover' style={{ backgroundImage: `url(${bg.src})` }}>
           <Nav />
           <div id='main-wrapper' className='flex-1 relative overflow-y-scroll lg:px-5'>
             {children}
