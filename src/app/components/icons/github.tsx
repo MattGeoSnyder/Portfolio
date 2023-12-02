@@ -1,7 +1,7 @@
 // icon:github | Ant Design Icons https://ant.design/components/icon/ | Ant Design
 import * as React from "react";
 
-function IconGithub(props: React.SVGProps<SVGSVGElement>) {
+function IconGithub(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 1024 1024"

@@ -1,7 +1,7 @@
 // icon:git | Bootstrap https://icons.getbootstrap.com/ | Bootstrap
 import * as React from "react";
 
-function IconGit(props: React.SVGProps<SVGSVGElement>) {
+function IconGit(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       fill="currentColor"

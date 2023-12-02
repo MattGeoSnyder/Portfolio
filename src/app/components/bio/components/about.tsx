@@ -6,6 +6,14 @@ import CSS from '@/app/components/icons/css';
 import Tailwind from '@/app/components/icons/tailwind';
 import React from '@/app/components/icons/react';
 import Redux from '@/app/components/icons/redux';
+import Node from '@/app/components/icons/node';
+import Postgres from '@/app/components/icons/postgres';
+import Python from '@/app/components/icons/python';
+import Flask from '@/app/components/icons/flask';
+import Express from '@/app/components/icons/express';
+import Git from '../../icons/git';
+import GitHub from '../../icons/github';
+import API from '@/app/components/icons/express'
 
 export default function About() {
   return (
@@ -23,6 +31,9 @@ export default function About() {
         <IconWrapper title='CSS'>
           <CSS />
         </IconWrapper>
+        <IconWrapper title='Flask'>
+          <Flask />
+        </IconWrapper>
         <IconWrapper title='React.js'>
           <React />
         </IconWrapper>
@@ -31,6 +42,34 @@ export default function About() {
         </IconWrapper>
         <IconWrapper title='Tailwind'>
           <Tailwind />
+        </IconWrapper>
+      </IconBar>
+      <IconBar title='Back End'>    
+        <IconWrapper title='Node.js'>
+          <Node />
+        </IconWrapper>
+        <IconWrapper title='PostgreSQL'>
+          <Postgres />
+        </IconWrapper>
+        <IconWrapper title='Python'>
+          <Python />
+        </IconWrapper>
+        <IconWrapper title='Express.js'>
+          <Express />
+        </IconWrapper>
+      </IconBar>
+      <IconBar title='Other'>    
+        <IconWrapper title='Next.js'>
+          <Next />
+        </IconWrapper>
+        <IconWrapper title='Git'>
+          <Git />
+        </IconWrapper>
+        <IconWrapper title='GitHub'>
+          <GitHub />
+        </IconWrapper>
+        <IconWrapper title='REST APIs'>
+          <API />
         </IconWrapper>
       </IconBar>
     </div>

@@ -1,7 +1,7 @@
 // icon:nextjs | Teeny Icons https://teenyicons.com/ | Anja van Staden
 import * as React from "react";
 
-function IconNextjs(props: React.SVGProps<SVGSVGElement>) {
+function IconNextjs(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg fill="none" viewBox="0 0 15 15" {...props}>
       <path

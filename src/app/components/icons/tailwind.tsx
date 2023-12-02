@@ -1,7 +1,7 @@
 // icon:bxl-tailwind-css | Boxicons https://boxicons.com/ | Atisa
 import * as React from "react";
 
-function IconBxlTailwindCss(props: React.SVGProps<SVGSVGElement>) {
+function IconBxlTailwindCss(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"

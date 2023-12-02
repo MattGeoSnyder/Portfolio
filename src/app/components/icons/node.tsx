@@ -1,7 +1,7 @@
 // icon:node-js | Fontawesome https://fontawesome.com/ | Fontawesome
 import * as React from "react";
 
-function IconNodeJs(props: React.SVGProps<SVGSVGElement>) {
+function IconNodeJs(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 448 512"

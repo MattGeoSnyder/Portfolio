@@ -1,7 +1,7 @@
 // icon:redux | Simple Icons https://simpleicons.org | SimpleIcons.org
 import * as React from "react";
 
-function IconRedux(props: React.SVGProps<SVGSVGElement>) {
+function IconRedux(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"

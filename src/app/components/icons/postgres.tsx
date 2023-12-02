@@ -1,7 +1,7 @@
 // icon:bxl-postgresql | Boxicons https://boxicons.com/ | Atisa
 import * as React from "react";
 
-function IconBxlPostgresql(props: React.SVGProps<SVGSVGElement>) {
+function IconBxlPostgresql(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"

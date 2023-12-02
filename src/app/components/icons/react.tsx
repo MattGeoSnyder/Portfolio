@@ -1,7 +1,7 @@
 // icon:react | Devicons https://vorillaz.github.io/devicons/#/main | Theodore Vorillas
 import * as React from "react";
 
-function IconReact(props: React.SVGProps<SVGSVGElement>) {
+function IconReact(props?: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 34 32"
