@@ -16,7 +16,9 @@ const config: Config = {
       colors: {
         blue1: '#00ffe6',
         blue2: '#009df3',
-        blue3: '#00009b'
+        blue3: '#00009b',
+        accentBlue: '#2b4bb2',
+        hlBlue: '#3457bf'
       }
     },
   },

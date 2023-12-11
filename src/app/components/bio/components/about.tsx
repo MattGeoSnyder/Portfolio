@@ -13,17 +13,11 @@ import Flask from '@/app/components/icons/flask';
 import Express from '@/app/components/icons/express';
 import Git from '../../icons/git';
 import GitHub from '../../icons/github';
-import API from '@/app/components/icons/express'
+import API from '@/app/components/icons/api'
 
 export default function About() {
   return (
-    <div className="w-full">
-      <h1>About Me</h1>
-      <div>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, at consequuntur! Sapiente eveniet expedita esse soluta maiores dolore ipsam vel iure neque totam, est consequatur, officia quod. Aspernatur, expedita nostrum.
-        </p>
-      </div>
+    <div className="flex flex-col justify-evenly lg: w-4/5 mx-auto h-full">
       <IconBar title='Front End'>    
         <IconWrapper title='HTML 5'>
           <HTML />

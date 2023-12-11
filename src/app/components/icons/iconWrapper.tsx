@@ -1,3 +1,6 @@
+'use client'
+import { useState } from 'react';
+
 import api from '@/app/components/icons/api';
 import css from '@/app/components/icons/css';
 import express from '@/app/components/icons/express';
@@ -48,12 +51,18 @@ export default function IconWrapper({ logo, title, className, children }: { logo
         return children;
     }
   }
+    const [hoverState, setHoverState] = useState<Boolean>(false);
   return (
-    <div className={`flex flex-col ${className ?? ''} aspect-square`}>
+
+    <div 
+      className={`flex flex-col ${className ?? ''} h-full aspect-square relative hover:bottom-3 hover:h-[150%] transition-all duration-300`}
+      onMouseOver={() => { setHoverState(true) }}
+      onMouseLeave={() => { setHoverState(false) }}
+    >
       <div className="flex justify-center flex-1">
         {renderIcon(logo)}   
       </div>    
-      <p className="text-center">{title}</p>
+      { hoverState && <p className="text-center">{title}</p> } 
     </div>
   )
 }

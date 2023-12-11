@@ -3,7 +3,7 @@ import Me from './components/me'
 
 export default function BioPage() {
   return (
-    <section id='bio-page' className="w-full h-full grid lg:grid-cols-2 py-5">
+    <section id='bio-page' className="w-full h-full py-5">
       <About></About>      
     </section>
   )
