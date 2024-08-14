@@ -1,40 +1,24 @@
-import { IconWrapper } from "@/app/components/icons/IconWrapper";
-import Image from "next/image";
-import Resume from "@/assets/icons/Resume.svg";
-import Phone from "@/assets/icons/Phone.svg";
-import Email from "@/assets/icons/Email.svg";
-import Github from "@/assets/icons/Github.svg";
-import LinkedIn from "@/assets/icons/LinkedIn.svg";
+import { Phone } from "@/app/components/Phone";
+import { Resume } from "@/app/components/Resume";
+import { Email } from "@/app/components/Email";
+import { GitHub } from "@/app/components/GitHub";
+import { LinkedIn } from "@/app/components/LinkedIn";
+import { Toaster } from "@/components/ui/toaster";
 
 export default function Home() {
   return (
-    <div
-      id="home-page"
-      className="w-full h-full p-40 grid md:grid-cols-3 md:grid-rows-2 md:gap-16 grid-cols-1"
-    >
-      <IconWrapper
-        key="Resume"
-        className="md:col-start-1 md:col-end-2 md:row-span-2"
+    <>
+      <div
+        id="home-page"
+        className="w-full h-full md:p-28 grid md:grid-cols-3 md:grid-rows-2 md:gap-16 grid-cols-1"
       >
-        <Resume fill="white" />
-        <p>Resume</p>
-      </IconWrapper>
-      <IconWrapper key="Phone">
-        <Phone fill="white" />
-        <p>Phone</p>
-      </IconWrapper>
-      <IconWrapper key="Email">
-        <Email fill="white" />
-        <p>Email</p>
-      </IconWrapper>
-      <IconWrapper key="GitHub">
-        <Github fill="white" />
-        <p>GitHub</p>
-      </IconWrapper>
-      <IconWrapper key="LinkedIn">
-        <LinkedIn fill="white" />
-        <p>LinkedIn</p>
-      </IconWrapper>
-    </div>
+        <Resume key={"Resume"}/>
+        <Phone phoneNumber="412-477-1776" key={"Phone"}/>
+        <Email url="mailto:mattgeosnyder@gmail.com" key={"Email"}/>
+        <GitHub url="https://github.com/MattGeoSnyder" key={"GitHub"}/>
+        <LinkedIn url="https://www.linkedin.com/in/mattgeosnyder" key={"LinkedIn"}/>
+      </div>
+      <Toaster />
+    </>
   );
 }
