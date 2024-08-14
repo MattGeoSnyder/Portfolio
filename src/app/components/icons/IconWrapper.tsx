@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 
 // This component is used to wrap the icon components
@@ -23,9 +23,9 @@ export function IconWrapper({
       className={`flex justify-center items-center bg-accentBlue rounded-lg hover:ring-white hover:ring-1 hover:cursor-pointer w-full h-full drop-shadow ${className ?? ""}`}
       {...rest}
       onClick={() => {
-	if (props.url) {
-	  newTabOnClick(props.url);
-	}
+        if (props.url) {
+          newTabOnClick(props.url);
+        }
       }}
     >
       <div className="flex flex-col justify-center pt-4 pb-1 h-full">
