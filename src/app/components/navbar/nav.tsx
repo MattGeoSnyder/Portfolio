@@ -10,7 +10,7 @@ export default function Nav() {
           viewBox="0 0 937 230"
         />
       </div>
-      <div><p className="font-bold" >Software Engineer and Mathematics M.S.</p></div>
+      <div><p className="font-bold md:text-2xl" >Software Engineer and Mathematics M.S.</p></div>
     </div>
   );
 }

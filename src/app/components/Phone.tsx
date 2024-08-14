@@ -4,11 +4,11 @@ import PhoneSvg from "@/assets/icons/Phone.svg";
 import { IconWrapper } from "@/app/components/icons/IconWrapper";
 import { useToast } from "@/components/ui/use-toast";
 
-interface PhoneProps {
+interface PhoneProps extends React.ComponentPropsWithoutRef<"div"> {
   phoneNumber: string;
 }
 
-export function Phone({ phoneNumber }: PhoneProps) {
+export function Phone({ phoneNumber, ...rest }: PhoneProps) {
   const { toast } = useToast();
   function copyToClipboard(text: string) {
     console.log("copying to clipboard");
@@ -20,6 +20,7 @@ export function Phone({ phoneNumber }: PhoneProps) {
   }
   return (
     <div
+      {...rest}
       onClick={() => {
         copyToClipboard(phoneNumber);
       }}
