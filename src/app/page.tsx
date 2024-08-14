@@ -13,7 +13,6 @@ export default function Home() {
       <div
         id="home-page"
         className="w-full h-full md:p-28 grid md:grid-cols-3 md:grid-rows-2 md:gap-16 grid-cols-1"
-	onClick={(e: MouseEvent<ReactComponentElement<ReactHTMLElement>, MouseEvent>) => { console.log(e.target) }}
       >
         <Resume key={"Resume"}/>
         <Phone phoneNumber="412-477-1776" key={"Phone"}/>
