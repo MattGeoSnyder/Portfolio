@@ -18,8 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/Icon.svg" type="image/svg+xml" sizes="any" />
+      </head>
       <body className={inter.className}>
-        <div id="main-content-container" className="relative w-screen h-screen text-white">
+        <div
+          id="main-content-container"
+          className="relative w-screen h-screen text-white"
+        >
           <Bg id="background" className="absolute top-0 -z-50 w-full h-full" />
           <div
             id="main-content-wrapper"
