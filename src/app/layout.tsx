@@ -24,17 +24,17 @@ export default function RootLayout({
       <body className={inter.className}>
         <div
           id="main-content-container"
-          className="relative w-screen h-screen text-white"
+          className="relative w-screen h-screen text-white overflow-hidden"
         >
           <Bg id="background" className="absolute top-0 -z-50 w-full h-full" />
           <div
             id="main-content-wrapper"
-            className="flex flex-col w-full h-full relative z-10"
+	    className="flex flex-col w-full h-full relative z-10 top-0"
           >
             <Nav />
             <div
               id="content-body-wrapper"
-              className="flex-1 relative overflow-y-scroll lg:px-5 max-md:pt-1"
+              className="flex-1 relative lg:px-5 max-md:pt-1 w-full h-full overflow-y-auto"
             >
               {children}
             </div>
