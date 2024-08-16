@@ -23,7 +23,7 @@ export function Resume({ ...props }: ResumeProps) {
           downloadFile("/Matthew_Snyder_Resume.pdf");
         }}
       >
-        <ResumeSvg fill="white" height="100%" width="100%" />
+        <ResumeSvg className="max-w-full" fill="white" height="100%" width="100%" />
       </IconWrapper>
     </div>
   );
