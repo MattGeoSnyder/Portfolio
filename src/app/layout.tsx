@@ -28,7 +28,7 @@ export default function RootLayout({
             <Nav />
             <div
               id="content-body-wrapper"
-              className="flex-1 relative overflow-y-scroll lg:px-5"
+              className="flex-1 relative overflow-y-scroll lg:px-5 max-md:pt-1"
             >
               {children}
             </div>
